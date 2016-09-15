@@ -1,0 +1,8 @@
+{
+  "name": "fuzzy.ai-web-siege",
+  "description": "Uses fuzzy.ai-web to make multiple requests to a server",
+  "dependencies": {
+    "async": "^2.0.1",
+    "fuzzy.ai-web": "^0.6.0"
+  }
+}
