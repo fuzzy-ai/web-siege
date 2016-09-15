@@ -15,8 +15,12 @@ let url = process.argv[4];
 let successes = 0, failures = 0;
 
 fetchURL = (i, callback) => {
+  let start = Date.now();
   web.get(url, (err, response, body) => {
+    let end = Date.now();
     if (err) {
+      console.log(`Error on attempt ${i} after ${end - start}ms`);
+      console.error(err);
       failures += 1;
     } else {
       successes += 1;
